@@ -1,0 +1,19 @@
+.li-filter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: darkgrey;
+    padding: 3px;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 8vw;
+}
+.li-filter:hover{
+    background-color: lightgrey;
+}
+.close-icon{
+    height: 20px;
+    width: 20px;
+    margin: 5px;
+}

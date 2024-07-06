@@ -1,0 +1,11 @@
+.button-11{
+    background-color: transparent;
+    border-width: 0px;
+    cursor: pointer;
+}
+
+.image-1{
+    height: 4vh;
+    width: 16vw;
+    object-fit: cover;
+}

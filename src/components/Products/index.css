@@ -1,0 +1,135 @@
+.products-container {
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(242, 250, 250);
+  height: 100vh;
+}
+.filter-container {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  width: 20vw;
+  margin: 1px;
+}
+
+.all-products-container {
+  width: 80vw;
+  margin: 1px;
+  background-color: #fff;
+  padding: 15px;
+  flex-wrap: wrap;
+}
+
+.filter-cont {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.filter-head {
+  font-size: 20px;
+}
+
+.clear {
+  background-color: transparent;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  color: cornflowerblue;
+  text-decoration: underline;
+}
+
+.filter-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.filter-head-2 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.filter-list-2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* produts cont*/
+
+.sort-1-cont {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sort-select {
+  border-radius: 6px;
+  padding: 10px;
+  background-color: transparent;
+}
+
+.products-list-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+  max-height: 550px;
+}
+
+.not-found-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.not-found-content {
+  text-align: center;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.not-found-title {
+  font-size: 6rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.not-found-message {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.not-found-description {
+  font-size: 1.2rem;
+  color: #888;
+  margin-bottom: 2rem;
+}
+
+.not-found-link {
+  display: inline-block;
+  padding: 0.8rem 1.6rem;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.not-found-link:hover {
+  background-color: #555;
+}

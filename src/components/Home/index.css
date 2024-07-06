@@ -1,0 +1,273 @@
+.home-main-container{
+  padding: 15px;
+}
+
+.cate-head{
+  color: brown;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-style: italic;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+.slick-div{
+    align-items: center;
+    border-width: 1px;
+    box-sizing: border-box;
+    display: flex;
+    flex: 1 1 0%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 0px;
+    min-width: 0px;
+    border-color: black;
+    justify-content: space-between;
+    border-radius: 4px;
+}
+.slick-img{
+  height: 35vh;
+  width: 20vw;
+  border-radius: 10px;
+}
+
+.slick-para{
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.carousel-div{
+  height: 40vh;
+  width: 100%;
+}
+
+.why-choose-us {
+  text-align: center;
+  padding: 2rem;
+  background-color: #f8f8f8;
+  margin-top: 45px;
+}
+
+.why-choose-us h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.feature {
+  width: 250px;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.feature i {
+  font-size: 2rem;
+  color: brown;
+  margin-bottom: 1rem;
+}
+
+.feature h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.feature p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.subscription-plans {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.plan-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.plan-card {
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 0 20px;
+  max-width: 300px;
+  width: 15vw;
+  transition: transform 0.3s ease;
+}
+
+.plan-card:hover {
+  transform: translateY(-5px);
+}
+
+.plan-header {
+  margin-bottom: 20px;
+}
+
+.plan-header h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.plan-price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ff6347;
+}
+
+.plan-features ul {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.plan-features li {
+  margin-bottom: 10px;
+}
+
+.plan-btn {
+  background-color: #ff6347;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.plan-btn:hover {
+  background-color: #e65c4a;
+}
+
+.premium {
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.premium .plan-price {
+  color: #4caf50;
+}
+
+.premium .plan-btn {
+  background-color: #4caf50;
+}
+
+.premium .plan-btn:hover {
+  background-color: #45a049;
+}
+
+.li{
+  list-style-type: circle;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 0;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+
+.footer-col h4 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-weight: 500;
+  position: relative;
+}
+
+.footer-col ul {
+  list-style: none;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #ccc;
+  padding-left: 8px;
+}
+
+.social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-right: 10px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+.footer-bottom {
+  background-color: #222;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 574px) {
+  .footer-col {
+    width: 100%;
+  }
+}
+.span{
+  font-weight: 500;
+  font-size: 20px;
+  color: white;
+  font-style: italic;
+
+}

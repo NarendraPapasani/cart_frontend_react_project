@@ -1,0 +1,24 @@
+li{
+    list-style-type: none;
+    margin: 5px;
+}
+
+.butt-1{
+    border-width: 0.83px;
+    border-color: brown;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: transparent;
+    color: brown;
+    cursor: pointer;
+}
+
+.butt-1:hover{
+    background-color: brown;
+    color: white;
+}
+
+.active{
+    background-color: brown;
+    color: white;;
+}
