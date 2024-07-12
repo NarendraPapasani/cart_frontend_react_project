@@ -8,6 +8,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
+import { useContext } from "react";
+import cartContext from "../../context/cartContext";
 
 const categoryOptions = [
   {
@@ -33,6 +35,7 @@ const categoryOptions = [
 ];
 
 const Home = () => {
+  const { setglobalSearchInput } = useContext(cartContext);
   const [isLoading, setLoading] = useState(false);
   const settings = {
     dots: true,
@@ -54,7 +57,6 @@ const Home = () => {
       navigate("/products");
     }
   };
-
   return (
     <div>
       <Navbar />
@@ -97,7 +99,7 @@ const Home = () => {
               />
               <p className="slick-para">Smart Watches from 1999/-</p>
               <Link
-                to={`/${categoryOptions[1].categoryId}`}
+                to={`/products`}
                 className="login-butt"
                 onClick={watchClick}
               >
@@ -113,7 +115,13 @@ const Home = () => {
                 alt="cate"
               />
               <p className="slick-para">Washing Machines from 8999/-</p>
-              <button className="login-butt">Check Now</button>
+              <Link
+                to={`/products`}
+                className="login-butt"
+                onClick={watchClick}
+              >
+                Check Now
+              </Link>
             </div>
           </div>
           <div>
@@ -124,7 +132,13 @@ const Home = () => {
                 alt="cate"
               />
               <p className="slick-para">Trending Clothes starting at 199/-</p>
-              <button className="login-butt">Check Now</button>
+              <Link
+                to={`/products`}
+                className="login-butt"
+                onClick={watchClick}
+              >
+                Check Now
+              </Link>
             </div>
           </div>
           <div>
@@ -135,7 +149,13 @@ const Home = () => {
                 alt="cate"
               />
               <p className="slick-para">Daily required Groceries </p>
-              <button className="login-butt">Check Now</button>
+              <Link
+                to={`/products`}
+                className="login-butt"
+                onClick={watchClick}
+              >
+                Check Now
+              </Link>
             </div>
           </div>
           <div>
@@ -146,7 +166,13 @@ const Home = () => {
                 alt="cate"
               />
               <p className="slick-para">Trending Toys Starting at 99/-</p>
-              <button className="login-butt">Check Now</button>
+              <Link
+                to={`/products`}
+                className="login-butt"
+                onClick={watchClick}
+              >
+                Check Now
+              </Link>
             </div>
           </div>
         </Slider>

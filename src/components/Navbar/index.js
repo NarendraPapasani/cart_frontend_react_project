@@ -4,6 +4,8 @@ import { Link, useNavigate } from "react-router-dom";
 import Cookies from "js-cookie";
 import ClipLoader from "react-spinners/ClipLoader";
 import Products from "../Products";
+import { useContext } from "react";
+import cartContext from "../../context/cartContext";
 
 const overrideStyles = {
   display: "block",
@@ -11,6 +13,8 @@ const overrideStyles = {
   borderColor: "red",
 };
 const Navbar = ({ onSearch }) => {
+  const { items, globalSearchInput, setglobalSearchInput, wishItems } =
+    useContext(cartContext);
   const [loading, setLoading] = useState(false);
   const [activeTab, setActiveTab] = useState("home");
   const [cssName, changeCssName] = useState("home-active");
@@ -30,13 +34,10 @@ const Navbar = ({ onSearch }) => {
   const searchInput = (event) => {
     const val = event.target.value;
     setInputValue(val);
-    if (onSearch) {
-      onSearch(val);
-    }
   };
 
   const renderSearchedValues = () => {
-    navigate("/products", { state: { data: searchValue } });
+    setglobalSearchInput(searchValue);
   };
 
   const Loader = () => {
@@ -100,21 +101,22 @@ const Navbar = ({ onSearch }) => {
           {jwtToken !== undefined && (
             <li className="nav-item">
               <Link to="/wishlist">
-                <p
-                  className={`nav-link ${c}`}
-                  onClick={() => setActiveTab("profile")}
-                >
-                  {" "}
-                  Wishlist
-                </p>
+                <button className="wishlist-button__btn">
+                  <i className="fa fa-heart"></i>
+                  <span className="wishlist-button__count">
+                    {wishItems.count}
+                  </span>
+                </button>
               </Link>
             </li>
           )}
           {jwtToken !== undefined && (
-            <button class="cart-btn">
-              <i class="fas fa-shopping-cart"></i>
-              <span>Cart</span>
-            </button>
+            <Link to="/cart" className="cart-button">
+              <span className="cart-icon"></span>
+              <i className="fas fa-shopping-cart"></i>
+
+              <span className="cart-count">{items.length}</span>
+            </Link>
           )}
           <li className="nav-item">
             {jwtToken !== undefined ? (

@@ -1,0 +1,42 @@
+.c-ul {
+  margin: 10px;
+}
+.empty-cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+}
+
+.empty-cart-content {
+  text-align: center;
+}
+
+.empty-cart-content h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.empty-cart-content p {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}

@@ -1,10 +1,12 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
+import { useNavigate } from "react-router-dom";
 import Cookies from "js-cookie";
 import ClipLoader from "react-spinners/ClipLoader";
 import { useParams } from "react-router-dom";
 import Navbar from "../Navbar";
 import "./index.css";
 import ProductCard from "../ProductCard";
+import cartContext from "../../context/cartContext";
 
 const overrideStyles = {
   display: "block",
@@ -12,6 +14,8 @@ const overrideStyles = {
   borderColor: "red",
 };
 const ProductItemDetails = (props) => {
+  const navigate = useNavigate();
+  const { items, addItem, addToWishList } = useContext(cartContext);
   const { productId } = useParams();
   const [product, setProduct] = useState({});
   const [isLoading, setLoading] = useState(false);
@@ -30,7 +34,7 @@ const ProductItemDetails = (props) => {
 
   useEffect(() => {
     getProductsInDetail();
-  });
+  }, []);
 
   const getProductsInDetail = async () => {
     try {
@@ -70,6 +74,7 @@ const ProductItemDetails = (props) => {
   const handleQuantityChange = (e) => {
     setQuantity(e.target.value);
   };
+
   const Loader = () => {
     return (
       <div>
@@ -88,7 +93,14 @@ const ProductItemDetails = (props) => {
       </div>
     );
   };
+
+  const clickBuyNow = () => {
+    addItem(product, quantity);
+    navigate("/cart");
+  };
+
   const {
+    id,
     imageUrl,
     title,
     brand,
@@ -151,8 +163,14 @@ const ProductItemDetails = (props) => {
               </button>
             </div>
           </div>
-          <button className="buy-now-button">
+          <button className="buy-now-button" onClick={clickBuyNow}>
             <i className="fas fa-shopping-cart"></i> Buy Now
+          </button>
+          <button
+            className="wishlist-buttons"
+            onClick={() => addToWishList(product, quantity)}
+          >
+            &#10084; Wishlist
           </button>
           <div className="product-description">
             <h3 className="section-heading">Description</h3>

@@ -1,8 +1,14 @@
 import React from "react";
 import "./index.css";
 import { Link } from "react-router-dom";
-
+import { FaArrowRight } from "react-icons/fa";
+import { useContext } from "react";
+import { useNavigate } from "react-router-dom";
+import cartContext from "../../context/cartContext";
 const ProductCard = (props) => {
+  const naviagte = useNavigate();
+  const { addToWishList, quantityWishChange, addItem } =
+    useContext(cartContext);
   const { each, productCardClick, handleWishlist, handleBuyNow } = props;
   const { title, brand, price, id, imageUrl, rating } = each;
   const handleProductCard = () => {
@@ -21,18 +27,16 @@ const ProductCard = (props) => {
           <p className="product-prices">${price.toFixed(2)}</p>
           <div className="button-containers">
             <button
-              className="wishlist-buttons"
-              onClick={() => handleWishlist(id)}
-            >
-              &#10084; Wishlist
-            </button>
-            <button
               className="buy-now-buttons"
-              onClick={() => handleBuyNow(id)}
+              onClick={() => naviagte("/products/${id}")}
             >
-              Buy Now
+              Click here
             </button>
           </div>
+          <p>
+            click for more details...
+            <FaArrowRight />
+          </p>
         </div>
       </Link>
     </li>

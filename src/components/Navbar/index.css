@@ -1,128 +1,126 @@
 body {
-    padding-top: 12vh; /* Adjust the value based on the height of your navbar */
-  }
-  
-  .navbar-cont {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center; /* Center the items vertically */
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 12vh; /* Adjust the height as needed */
-    width: 100%;
-    color: #fff;
-    background-color: #333; /* Set the background color */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    z-index: 999;
-
-  }
-  
-  .navbar-cont a {
-    color: #fff; /* Set the color for links */
-    text-decoration: none; /* Remove underline from links */
-    margin: 0 0.5rem; /* Add some spacing between links */
-    transition: color 0.3s ease; /* Add a smooth color transition on hover */
-  }
-  
-  .navbar-cont a:hover {
-    color: #ccc; /* Change the color on hover */
-  }
-  
-  .navbar-cont .logo {
-    font-size: 1.5rem; /* Increase the font size for the logo */
-    font-weight: bold; /* Make the logo bold */
-  }
-  
-
-.web-logo{
-    height: 80px;
-    width: 80px;
-    border-radius: 10px;
-    cursor: pointer;
-}
-.nav-menu{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-.nav-item{
-    list-style-type: none;
-    text-decoration: none;
-    color: brown;
-    padding-left: 10px;
-    padding-right: 10px;
+  padding-top: 12vh; /* Adjust the value based on the height of your navbar */
 }
 
-.nav-link{
-    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+.navbar-cont {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; /* Center the items vertically */
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 12vh; /* Adjust the height as needed */
+  width: 100%;
+  color: #fff;
+  background-color: #333; /* Set the background color */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+}
+
+.navbar-cont a {
+  color: #fff; /* Set the color for links */
+  text-decoration: none; /* Remove underline from links */
+  margin: 0 0.5rem; /* Add some spacing between links */
+  transition: color 0.3s ease; /* Add a smooth color transition on hover */
+}
+
+.navbar-cont a:hover {
+  color: #ccc; /* Change the color on hover */
+}
+
+.navbar-cont .logo {
+  font-size: 1.5rem; /* Increase the font size for the logo */
+  font-weight: bold; /* Make the logo bold */
+}
+
+.web-logo {
+  height: 80px;
+  width: 80px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.nav-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.nav-item {
+  list-style-type: none;
+  text-decoration: none;
+  color: brown;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.nav-link {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
     "Liberation Mono", "Courier New", monospace;
-    font-size: 16px;
-    padding: 10px;
-    border-radius: 4px;
-    width: 8vw;
-    text-align: center;
-    cursor: pointer;
-    color: brown;
-    background-color: #ffff;
-    transition: background-color 0.3s ease; /* Smooth transition on hover */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 4px;
+  width: 8vw;
+  text-align: center;
+  cursor: pointer;
+  color: brown;
+  background-color: #ffff;
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.nav-link:hover{
-    background-color: rgb(243, 222, 206);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+.nav-link:hover {
+  background-color: rgb(243, 222, 206);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .login-butt {
-    background: linear-gradient(to right, #8B4513, #A0522D);
-    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+  background: linear-gradient(to right, #8b4513, #a0522d);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
     "Liberation Mono", "Courier New", monospace;
-    color: white; /* Text color */
-    padding: 10px 20px; /* Padding for the button */
-    border: none; /* Remove default button border */
-    border-radius: 4px; /* Rounded corners */
-    cursor: pointer; /* Change cursor to a pointer on hover */
-    font-size: 16px; /* Font size */
-    width: 10vw;
-    text-align: center;
-    transition: background-color 0.3s ease; /* Smooth transition on hover */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
+  color: white; /* Text color */
+  padding: 10px 20px; /* Padding for the button */
+  border: none; /* Remove default button border */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Change cursor to a pointer on hover */
+  font-size: 16px; /* Font size */
+  width: 10vw;
+  text-align: center;
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
-  .login-butt:hover {
-    background: linear-gradient(to right, #A0522D, #8B4513);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-  }
-  
-  .login-butt-logout {
-    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+.login-butt:hover {
+  background: linear-gradient(to right, #a0522d, #8b4513);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.login-butt-logout {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
     "Liberation Mono", "Courier New", monospace; /* Text color */
-    padding: 10px 20px; /* Padding for the button */
-    background-color: transparent;
-    color: #fff;
-  
-    border: solid 1px #fff; /* Remove default button border */
-    border-radius: 4px; /* Rounded corners */
-    cursor: pointer; /* Change cursor to a pointer on hover */
-    font-size: 16px; /* Font size */
-    width: 10vw;
-    text-align: center;
-    transition: background-color 0.3s ease; /* Smooth transition on hover */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
+  padding: 10px 20px; /* Padding for the button */
+  background-color: transparent;
+  color: #fff;
 
-  .login-butt-logout:hover {
-    background: linear-gradient(to right, #A0522D, #8B4513);
-    color: #fff;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-  }
-  /* Import Font Awesome for the search icon */
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+  border: solid 1px #fff; /* Remove default button border */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Change cursor to a pointer on hover */
+  font-size: 16px; /* Font size */
+  width: 10vw;
+  text-align: center;
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login-butt-logout:hover {
+  background: linear-gradient(to right, #a0522d, #8b4513);
+  color: #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+/* Import Font Awesome for the search icon */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
 
 .search-container {
   display: flex;
@@ -166,7 +164,7 @@ body {
   font-size: 14px;
 }
 
-.pop-up-div{
+.pop-up-div {
   background-color: transparent;
 }
 
@@ -178,9 +176,45 @@ body {
   font-size: 1.5rem;
   color: #333;
 }
+.wishlist-button {
+  position: relative;
+}
+
+.wishlist-button__btn {
+  background-color: #ff9900;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.wishlist-button__btn:hover {
+  background-color: #e68a00;
+}
+
+.wishlist-button__count {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: #ff0000;
+  color: #fff;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 /* Import Font Awesome icons */
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
 
 /* Cart Button Styles */
 .cart-btn {
@@ -199,24 +233,62 @@ body {
 }
 
 .cart-btn:hover {
-  background: linear-gradient(to right, #A0522D, #8B4513);
+  background: linear-gradient(to right, #a0522d, #8b4513);
 }
 
 .cart-btn i {
   margin-right: 8px;
 }
 
-.home-active{
-  background: linear-gradient(to right, #A0522D, #8B4513);
+.home-active {
+  background: linear-gradient(to right, #a0522d, #8b4513);
   color: #fff;
 }
 
-.products-active{
-  background: linear-gradient(to right, #A0522D, #8B4513);
+.products-active {
+  background: linear-gradient(to right, #a0522d, #8b4513);
   color: #fff;
 }
 
-.profile-active{
-  background: linear-gradient(to right, #A0522D, #8B4513);
+.profile-active {
+  background: linear-gradient(to right, #a0522d, #8b4513);
   color: #fff;
+}
+
+.cart-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: linear-gradient(to right, #a0522d, #8b4513);
+  color: #fff;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.cart-button:hover {
+  background-color: #0056b3;
+}
+
+.cart-icon {
+  font-size: 1.5rem;
+}
+
+.cart-count {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: #ff0000;
+  color: #fff;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  font-weight: bold;
 }
